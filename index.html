@@ -96,10 +96,9 @@ body.locked{overflow:hidden;height:100vh}
 .date span{font-size:10.5px;letter-spacing:.3em;line-height:1.9;width:96px}
 .date i{width:1px;height:46px;background:linear-gradient(transparent,var(--g2),transparent)}
 .date b{font-size:44px;font-weight:400;line-height:1}
-.couple-portrait{position:relative;width:min(78vw,260px);margin:52px auto 0;padding:7px;border:1px solid var(--g2);background:linear-gradient(135deg,#8a6420,#f3dfa2 48%,#8a6420);box-shadow:0 0 0 5px rgba(26,3,7,.75),0 0 0 6px rgba(201,162,78,.4),0 22px 50px rgba(0,0,0,.55);animation:portraitFloat 5s ease-in-out infinite}
-.couple-portrait::before{content:'';position:absolute;inset:13px;border:1px solid rgba(243,223,162,.7);z-index:1;pointer-events:none}
-.couple-portrait img{display:block;width:100%;aspect-ratio:2/3;object-fit:cover;object-position:center;border:1px solid rgba(26,3,7,.8)}
-@keyframes portraitFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.couple-portrait{position:relative;width:86px;margin:18px auto 0;padding:4px;border:1px solid rgba(201,162,78,.72);border-radius:50%;background:linear-gradient(135deg,rgba(138,100,32,.9),rgba(243,223,162,.9) 48%,rgba(138,100,32,.9));box-shadow:0 0 0 3px rgba(26,3,7,.7),0 0 0 4px rgba(201,162,78,.28),0 8px 20px rgba(0,0,0,.4);opacity:.88}
+.couple-portrait::before{content:'';position:absolute;inset:8px;border:1px solid rgba(243,223,162,.62);border-radius:50%;z-index:1;pointer-events:none}
+.couple-portrait img{display:block;width:100%;aspect-ratio:1;object-fit:cover;object-position:center;border:1px solid rgba(26,3,7,.8);border-radius:50%;filter:saturate(.72) contrast(.94)}
 .skyline{width:100%;max-width:540px;aspect-ratio:480/285;margin:50px auto 0;display:block;filter:drop-shadow(0 0 6px rgba(217,178,95,.3))}
 .jsr{font-family:'Rozha One','Tiro Devanagari Hindi';font-size:22px;letter-spacing:.06em;margin-top:10px}
 .cue{width:1px;height:46px;margin:20px auto 30px;background:linear-gradient(var(--g2),transparent);animation:cue 2.4s ease-in-out infinite}
@@ -455,11 +454,11 @@ footer .copy{font-family:Cinzel;font-style:normal;font-size:9.5px;letter-spacing
     <p class="amp rise" style="--d:1.6s">&amp;</p>
     <h1 class="name foil rise" style="--d:1.75s">Devesh</h1>
     <div class="date rise" style="--d:1.95s"><span>WEDNESDAY</span><i></i><b class="foil">02</b><i></i><span>DECEMBER<br>2026</span></div>
+    <div class="couple-portrait rise" style="--d:2.1s">
+      <img src="couple-portrait.png" alt="Krishna and Devesh">
+    </div>
   </div>
 
-  <div class="couple-portrait rise" style="--d:2.1s">
-    <img src="couple-portrait.png" alt="Animated faceless portrait of Krishna and Devesh">
-  </div>
   <svg class="skyline rise" style="--d:2.2s" role="img" aria-label="Shri Ram Janmabhoomi Mandir"><use href="#rammandir" width="100%" height="100%"/></svg>
   <p class="jsr foil rise" style="--d:2.4s">॥ जय श्री राम ॥</p>
   <div class="cue rise" style="--d:2.6s"></div>
